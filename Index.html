@@ -1,147 +1,112 @@
+<!--
+    The starter code for this index page was downloaded from getbootstrap.com by Shuting Xie.
+    The layout (named jumbotron) was contributed by developers to Bootstrap via example themes.
+    URL: https://getbootstrap.com/docs/4.0/examples/jumbotron/
+    Date accesed: 8 June, 2023
+-->
 
-<html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-        <style>body{ margin:0 100; background:whitesmoke; }</style>
-    </head>
-    <body>
-        <h1>Group/Function: histone binding</h1>
-        
-        <!-- *** Two Lists *** --->
-        <h2>IDRs List</h2>
-        <table class="table table-striped">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Protein IDR</th>
-      <th>GO0042393_histone_binding</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Q92794_IDR_783_1903</td>
-      <td>0.795020</td>
-    </tr>
-    <tr>
-      <td>Q9NU22_IDR_4661_5278</td>
-      <td>1.000000</td>
-    </tr>
-    <tr>
-      <td>Q9NVP1_IDR_1_173</td>
-      <td>0.823353</td>
-    </tr>
-    <tr>
-      <td>P35659_IDR_188_319</td>
-      <td>0.709345</td>
-    </tr>
-    <tr>
-      <td>P49711_IDR_559_715</td>
-      <td>0.820802</td>
-    </tr>
-    <tr>
-      <td>Q96T23_IDR_208_1425</td>
-      <td>1.000000</td>
-    </tr>
-    <tr>
-      <td>O00294_IDR_14_285</td>
-      <td>1.000000</td>
-    </tr>
-    <tr>
-      <td>O60524_IDR_669_975</td>
-      <td>0.779465</td>
-    </tr>
-    <tr>
-      <td>P78362_IDR_248_510</td>
-      <td>0.848422</td>
-    </tr>
-  </tbody>
-</table>
-        
-        <h2>Features List</h2>
-        <table class="table table-striped">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Feature names</th>
-      <th>GO0042393_histone_binding</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>WF_complexity</td>
-      <td>1.131800</td>
-    </tr>
-    <tr>
-      <td>FCR</td>
-      <td>2.817525</td>
-    </tr>
-    <tr>
-      <td>SCD</td>
-      <td>2.601756</td>
-    </tr>
-    <tr>
-      <td>id.REP_E2.E.2.2.</td>
-      <td>2.074902</td>
-    </tr>
-    <tr>
-      <td>id.REP_D2.D.2.2.</td>
-      <td>1.085807</td>
-    </tr>
-    <tr>
-      <td>id.REP_K2.K.2.2.</td>
-      <td>2.814414</td>
-    </tr>
-    <tr>
-      <td>id.REP_P2.P.2.2.</td>
-      <td>-1.791387</td>
-    </tr>
-    <tr>
-      <td>CLV_C14_Caspase3.7</td>
-      <td>3.208207</td>
-    </tr>
-    <tr>
-      <td>LIG_SUMO_SIM_anti_2</td>
-      <td>3.173525</td>
-    </tr>
-    <tr>
-      <td>MOD_CK2_1</td>
-      <td>-6.776949</td>
-    </tr>
-    <tr>
-      <td>TRG_NLS_MonoExtN_4</td>
-      <td>3.090136</td>
-    </tr>
-    <tr>
-      <td>D_homorep</td>
-      <td>3.690732</td>
-    </tr>
-    <tr>
-      <td>E_homorep</td>
-      <td>0.775780</td>
-    </tr>
-    <tr>
-      <td>R_homorep</td>
-      <td>2.355110</td>
-    </tr>
-    <tr>
-      <td>SGFYSG</td>
-      <td>-1.749360</td>
-    </tr>
-    <tr>
-      <td>R_plus_Y</td>
-      <td>-3.208359</td>
-    </tr>
-    <tr>
-      <td>AA_G</td>
-      <td>4.610346</td>
-    </tr>
-    <tr>
-      <td>AA_W</td>
-      <td>-2.714511</td>
-    </tr>
-    <tr>
-      <td>aromatic</td>
-      <td>-2.666586</td>
-    </tr>
-  </tbody>
-</table>
-    </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="index1.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="index2.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Functions for Intrinsically Disordered Regions</h1>
+          <p>Some explanation of the webpage...</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Functions</h2>
+            <p>...</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>IDRs</h2>
+            <p>...</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Molecular features</h2>
+            <p>...</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>&copy; Company 2017-2018</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
 </html>

@@ -1,71 +1,36 @@
- <html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-        <style>body{ margin:0 100; background:whitesmoke; }</style>
-    </head>
-    <body>
-        <h1>Function names</h1>
 
-        <!-- *** Function Lists *** - -->
-        <table class="table table-striped">
-            <thead>
-                <tr style="text-align: right;">
-                <th>GO_LABEL</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- <tr>
-                <td><a href="1_nucleolus.html">GO0005730_nucleolus</a></td>
-                </tr>
-                <tr>
-                <td><a href="2_extracellular_matrix.html">GO0031012_extracellular_matrix</a></td>
-                </tr>
-                <tr>
-                <td><a href="3_external_encapsulating_structure.html">GO0030312_external_encapsulating_structure</a></td>
-                </tr>
-                <tr>
-                <td><a href="4_histone_binding.html">GO0042393_histone_binding</a></td>
-                </tr>
-                <tr>
-                <td><a href="5_chromatin_binding.html">GO0003682_chromatin_binding</a></td>
-                </tr> -->
-                <script>
-                    var functionNames = [
-                    "GO0005730_nucleolus",
-                    "GO0031012_extracellular_matrix",
-                    "GO0030312_external_encapsulating_structure",
-                    "GO0042393_histone_binding",
-                    "GO0003682_chromatin_binding"
-                    ];
+    <html>
+        <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+            <style>body{ margin:0 100; background:whitesmoke; }</style>
+        </head>
+        <body>
+            <h1>Function names</h1>
 
-                    // Get the table body element
-                    var tbody = document.querySelector("tbody");
-
-                    // Generate the table rows dynamically
-                    functionNames.forEach(function (name) {
-                    // Create a new row
-                    var row = document.createElement("tr");
-
-                    // Create a new cell
-                    var cell = document.createElement("td");
-
-                    // Create a new anchor element
-                    var link = document.createElement("a");
-                    link.href = name + ".html";
-                    link.textContent = name;
-
-                    // Append the anchor element to the cell
-                    cell.appendChild(link);
-
-                    // Append the cell to the row
-                    row.appendChild(cell);
-
-                    // Append the row to the table body
-                    tbody.appendChild(row);
-                    });
-                </script>
-            </tbody>
-        </table>
-
-    </body>
-</html>
+            <!-- *** Function Lists *** --->
+            <table class="table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th>GO_LABEL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GO0005730_nucleolus</td>
+    </tr>
+    <tr>
+      <td>GO0031012_extracellular_matrix</td>
+    </tr>
+    <tr>
+      <td>GO0030312_external_encapsulating_structure</td>
+    </tr>
+    <tr>
+      <td>GO0042393_histone_binding</td>
+    </tr>
+    <tr>
+      <td>GO0003682_chromatin_binding</td>
+    </tr>
+  </tbody>
+</table>
+        </body>
+    </html>

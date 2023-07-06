@@ -1,72 +1,465 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-        <style>body{ margin:0 100; background:whitesmoke; }</style>
-    </head>
 
-    <body>
+    <html>
+        <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+            <style>body{ margin:0 100; background:whitesmoke; }</style>
+        </head>
+        <body>
+            <h1>Function names</h1>
 
-        <h1>Function names</h1>
-
-        <!-- *** Function Lists *** - -->
-        <table class="table table-striped">
-            <thead>
-                <tr style="text-align: right;">
-                <th>GO_LABEL</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <script>
-
-                    var functionNames = [
-
-                    "GO0005730_nucleolus",
-
-                    "GO0031012_extracellular_matrix",
-
-                    "GO0030312_external_encapsulating_structure",
-
-                    "GO0042393_histone_binding",
-
-                    "GO0003682_chromatin_binding"
-
-                    ];
-      
-
-
-                    // Get the table body element
-                    var tbody = document.querySelector("tbody");
-
-                    // Generate the table rows dynamically
-                    functionNames.forEach(function (name) {
-
-                    // Create a new row
-                    var row = document.createElement("tr");
-
-                    // Create a new cell
-                    var cell = document.createElement("td");
-
-                    // Create a new anchor element
-                    var link = document.createElement("a");
-
-                    link.href = name + ".html";
-
-                    link.textContent = name;
-
-                    // Append the anchor element to the cell
-                    cell.appendChild(link);
-
-                    // Append the cell to the row
-                    row.appendChild(cell);
-
-                    // Append the row to the table body
-                    tbody.appendChild(row);
-
-                    });
-
-                </script>
-            </tbody>
-        </table>
-    </body>
-</html>
+            <!-- *** Function Lists *** --->
+            <table class="table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th>GO_LABEL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GO0005730_nucleolus</td>
+    </tr>
+    <tr>
+      <td>GO0031012_extracellular_matrix</td>
+    </tr>
+    <tr>
+      <td>GO0030312_external_encapsulating_structure</td>
+    </tr>
+    <tr>
+      <td>GO0042393_histone_binding</td>
+    </tr>
+    <tr>
+      <td>GO0003682_chromatin_binding</td>
+    </tr>
+    <tr>
+      <td>GO0005911_cell_cell_junction</td>
+    </tr>
+    <tr>
+      <td>GO0006397_mRNA_processing</td>
+    </tr>
+    <tr>
+      <td>GO0000377_RNA_splicing,_via_transesterification_reactions_with_bulged_adenosine_as_nucleophile</td>
+    </tr>
+    <tr>
+      <td>GO0070161_anchoring_junction</td>
+    </tr>
+    <tr>
+      <td>GO0048018_receptor_ligand_activity</td>
+    </tr>
+    <tr>
+      <td>GO0006281_DNA_repair</td>
+    </tr>
+    <tr>
+      <td>GO0005681_spliceosomal_complex</td>
+    </tr>
+    <tr>
+      <td>GO0015291_secondary_active_transmembrane_transporter_activity</td>
+    </tr>
+    <tr>
+      <td>GO0008380_RNA_splicing</td>
+    </tr>
+    <tr>
+      <td>GO0140097_catalytic_activity,_acting_on_DNA</td>
+    </tr>
+    <tr>
+      <td>GO0006325_chromatin_organization</td>
+    </tr>
+    <tr>
+      <td>GO0005813_centrosome</td>
+    </tr>
+    <tr>
+      <td>GO0000987_cis_regulatory_region_sequence_specific_DNA_binding</td>
+    </tr>
+    <tr>
+      <td>GO0000978_RNA_polymerase_II_cis_regulatory_region_sequence_specific_DNA_binding</td>
+    </tr>
+    <tr>
+      <td>GO0030695_GTPase_regulator_activity</td>
+    </tr>
+    <tr>
+      <td>GO0030546_signaling_receptor_activator_activity</td>
+    </tr>
+    <tr>
+      <td>GO0043547_positive_regulation_of_GTPase_activity</td>
+    </tr>
+    <tr>
+      <td>GO0022804_active_transmembrane_transporter_activity</td>
+    </tr>
+    <tr>
+      <td>GO0034660_ncRNA_metabolic_process</td>
+    </tr>
+    <tr>
+      <td>GO0022613_ribonucleoprotein_complex_biogenesis</td>
+    </tr>
+    <tr>
+      <td>GO0004930_G_protein_coupled_receptor_activity</td>
+    </tr>
+    <tr>
+      <td>GO0000375_RNA_splicing,_via_transesterification_reactions</td>
+    </tr>
+    <tr>
+      <td>GO0045944_positive_regulation_of_transcription_by_RNA_polymerase_II</td>
+    </tr>
+    <tr>
+      <td>GO0003779_actin_binding</td>
+    </tr>
+    <tr>
+      <td>GO0060589_nucleoside_triphosphatase_regulator_activity</td>
+    </tr>
+    <tr>
+      <td>GO0000981_DNA_binding_transcription_factor_activity,_RNA_polymerase_II_specific</td>
+    </tr>
+    <tr>
+      <td>GO0005198_structural_molecule_activity</td>
+    </tr>
+    <tr>
+      <td>GO1903311_regulation_of_mRNA_metabolic_process</td>
+    </tr>
+    <tr>
+      <td>GO0001067_transcription_regulatory_region_nucleic_acid_binding</td>
+    </tr>
+    <tr>
+      <td>GO0000976_transcription_cis_regulatory_region_binding</td>
+    </tr>
+    <tr>
+      <td>GO0000785_chromatin</td>
+    </tr>
+    <tr>
+      <td>GO0003700_DNA_binding_transcription_factor_activity</td>
+    </tr>
+    <tr>
+      <td>GO0051276_chromosome_organization</td>
+    </tr>
+    <tr>
+      <td>GO0009986_cell_surface</td>
+    </tr>
+    <tr>
+      <td>GO0022843_voltage_gated_cation_channel_activity</td>
+    </tr>
+    <tr>
+      <td>GO0034470_ncRNA_processing</td>
+    </tr>
+    <tr>
+      <td>GO0000977_RNA_polymerase_II_transcription_regulatory_region_sequence_specific_DNA_binding</td>
+    </tr>
+    <tr>
+      <td>GO0005096_GTPase_activator_activity</td>
+    </tr>
+    <tr>
+      <td>GO0034330_cell_junction_organization</td>
+    </tr>
+    <tr>
+      <td>GO0043565_sequence_specific_DNA_binding</td>
+    </tr>
+    <tr>
+      <td>GO0005739_mitochondrion</td>
+    </tr>
+    <tr>
+      <td>GO1990904_ribonucleoprotein_complex</td>
+    </tr>
+    <tr>
+      <td>GO0005815_microtubule_organizing_center</td>
+    </tr>
+    <tr>
+      <td>GO0005244_voltage_gated_ion_channel_activity</td>
+    </tr>
+    <tr>
+      <td>GO0032553_ribonucleotide_binding</td>
+    </tr>
+    <tr>
+      <td>GO0015085_calcium_ion_transmembrane_transporter_activity</td>
+    </tr>
+    <tr>
+      <td>GO0000398_mRNA_splicing,_via_spliceosome</td>
+    </tr>
+    <tr>
+      <td>GO0006259_DNA_metabolic_process</td>
+    </tr>
+    <tr>
+      <td>GO0098609_cell_cell_adhesion</td>
+    </tr>
+    <tr>
+      <td>GO0003690_double_stranded_DNA_binding</td>
+    </tr>
+    <tr>
+      <td>GO0042127_regulation_of_cell_population_proliferation</td>
+    </tr>
+    <tr>
+      <td>GO0022853_active_ion_transmembrane_transporter_activity</td>
+    </tr>
+    <tr>
+      <td>GO0033218_amide_binding</td>
+    </tr>
+    <tr>
+      <td>GO0140694_non_membrane_bounded_organelle_assembly</td>
+    </tr>
+    <tr>
+      <td>GO0006396_RNA_processing</td>
+    </tr>
+    <tr>
+      <td>GO0003729_mRNA_binding</td>
+    </tr>
+    <tr>
+      <td>GO0005525_GTP_binding</td>
+    </tr>
+    <tr>
+      <td>GO0006974_cellular_response_to_DNA_damage_stimulus</td>
+    </tr>
+    <tr>
+      <td>GO1990837_sequence_specific_double_stranded_DNA_binding</td>
+    </tr>
+    <tr>
+      <td>GO0006820_anion_transport</td>
+    </tr>
+    <tr>
+      <td>GO0140110_transcription_regulator_activity</td>
+    </tr>
+    <tr>
+      <td>GO1902680_positive_regulation_of_RNA_biosynthetic_process</td>
+    </tr>
+    <tr>
+      <td>GO0030545_signaling_receptor_regulator_activity</td>
+    </tr>
+    <tr>
+      <td>GO0016071_mRNA_metabolic_process</td>
+    </tr>
+    <tr>
+      <td>GO0004175_endopeptidase_activity</td>
+    </tr>
+    <tr>
+      <td>GO0007264_small_GTPase_mediated_signal_transduction</td>
+    </tr>
+    <tr>
+      <td>GO0061630_ubiquitin_protein_ligase_activity</td>
+    </tr>
+    <tr>
+      <td>GO0019935_cyclic_nucleotide_mediated_signaling</td>
+    </tr>
+    <tr>
+      <td>GO0006357_regulation_of_transcription_by_RNA_polymerase_II</td>
+    </tr>
+    <tr>
+      <td>GO0005694_chromosome</td>
+    </tr>
+    <tr>
+      <td>GO0043604_amide_biosynthetic_process</td>
+    </tr>
+    <tr>
+      <td>GO0043043_peptide_biosynthetic_process</td>
+    </tr>
+    <tr>
+      <td>GO0006900_vesicle_budding_from_membrane</td>
+    </tr>
+    <tr>
+      <td>GO0043087_regulation_of_GTPase_activity</td>
+    </tr>
+    <tr>
+      <td>GO1901135_carbohydrate_derivative_metabolic_process</td>
+    </tr>
+    <tr>
+      <td>GO0008509_anion_transmembrane_transporter_activity</td>
+    </tr>
+    <tr>
+      <td>GO0003677_DNA_binding</td>
+    </tr>
+    <tr>
+      <td>GO0006366_transcription_by_RNA_polymerase_II</td>
+    </tr>
+    <tr>
+      <td>GO0099111_microtubule_based_transport</td>
+    </tr>
+    <tr>
+      <td>GO0030990_intraciliary_transport_particle</td>
+    </tr>
+    <tr>
+      <td>GO1903506_regulation_of_nucleic_acid_templated_transcription</td>
+    </tr>
+    <tr>
+      <td>GO0005814_centriole</td>
+    </tr>
+    <tr>
+      <td>GO0000280_nuclear_division</td>
+    </tr>
+    <tr>
+      <td>GO1905114_cell_surface_receptor_signaling_pathway_involved_in_cell_cell_signaling</td>
+    </tr>
+    <tr>
+      <td>GO0051254_positive_regulation_of_RNA_metabolic_process</td>
+    </tr>
+    <tr>
+      <td>GO0051648_vesicle_localization</td>
+    </tr>
+    <tr>
+      <td>GO0010970_transport_along_microtubule</td>
+    </tr>
+    <tr>
+      <td>GO0051656_establishment_of_organelle_localization</td>
+    </tr>
+    <tr>
+      <td>GO0045893_positive_regulation_of_transcription,_DNA_templated</td>
+    </tr>
+    <tr>
+      <td>GO0005768_endosome</td>
+    </tr>
+    <tr>
+      <td>GO0007018_microtubule_based_movement</td>
+    </tr>
+    <tr>
+      <td>GO0051252_regulation_of_RNA_metabolic_process</td>
+    </tr>
+    <tr>
+      <td>GO0000226_microtubule_cytoskeleton_organization</td>
+    </tr>
+    <tr>
+      <td>GO0006355_regulation_of_transcription,_DNA_templated</td>
+    </tr>
+    <tr>
+      <td>GO0010557_positive_regulation_of_macromolecule_biosynthetic_process</td>
+    </tr>
+    <tr>
+      <td>GO0051650_establishment_of_vesicle_localization</td>
+    </tr>
+    <tr>
+      <td>GO0140513_nuclear_protein_containing_complex</td>
+    </tr>
+    <tr>
+      <td>GO0008283_cell_population_proliferation</td>
+    </tr>
+    <tr>
+      <td>GO0010324_membrane_invagination</td>
+    </tr>
+    <tr>
+      <td>GO0003924_GTPase_activity</td>
+    </tr>
+    <tr>
+      <td>GO0031326_regulation_of_cellular_biosynthetic_process</td>
+    </tr>
+    <tr>
+      <td>GO0031981_nuclear_lumen</td>
+    </tr>
+    <tr>
+      <td>GO0000278_mitotic_cell_cycle</td>
+    </tr>
+    <tr>
+      <td>GO0004888_transmembrane_signaling_receptor_activity</td>
+    </tr>
+    <tr>
+      <td>GO0051345_positive_regulation_of_hydrolase_activity</td>
+    </tr>
+    <tr>
+      <td>GO0042073_intraciliary_transport</td>
+    </tr>
+    <tr>
+      <td>GO0035639_purine_ribonucleoside_triphosphate_binding</td>
+    </tr>
+    <tr>
+      <td>GO0031328_positive_regulation_of_cellular_biosynthetic_process</td>
+    </tr>
+    <tr>
+      <td>GO0005654_nucleoplasm</td>
+    </tr>
+    <tr>
+      <td>GO0007017_microtubule_based_process</td>
+    </tr>
+    <tr>
+      <td>GO0019219_regulation_of_nucleobase_containing_compound_metabolic_process</td>
+    </tr>
+    <tr>
+      <td>GO0140640_catalytic_activity,_acting_on_a_nucleic_acid</td>
+    </tr>
+    <tr>
+      <td>GO2001141_regulation_of_RNA_biosynthetic_process</td>
+    </tr>
+    <tr>
+      <td>GO0005615_extracellular_space</td>
+    </tr>
+    <tr>
+      <td>GO0042277_peptide_binding</td>
+    </tr>
+    <tr>
+      <td>GO0097659_nucleic_acid_templated_transcription</td>
+    </tr>
+    <tr>
+      <td>GO0097712_vesicle_targeting,_trans_Golgi_to_periciliary_membrane_compartment</td>
+    </tr>
+    <tr>
+      <td>GO0022832_voltage_gated_channel_activity</td>
+    </tr>
+    <tr>
+      <td>GO0006351_transcription,_DNA_templated</td>
+    </tr>
+    <tr>
+      <td>GO0006952_defense_response</td>
+    </tr>
+    <tr>
+      <td>GO0008017_microtubule_binding</td>
+    </tr>
+    <tr>
+      <td>GO0060089_molecular_transducer_activity</td>
+    </tr>
+    <tr>
+      <td>GO0038023_signaling_receptor_activity</td>
+    </tr>
+    <tr>
+      <td>GO0010556_regulation_of_macromolecule_biosynthetic_process</td>
+    </tr>
+    <tr>
+      <td>GO0009889_regulation_of_biosynthetic_process</td>
+    </tr>
+    <tr>
+      <td>GO0032774_RNA_biosynthetic_process</td>
+    </tr>
+    <tr>
+      <td>GO0007155_cell_adhesion</td>
+    </tr>
+    <tr>
+      <td>GO0043235_receptor_complex</td>
+    </tr>
+    <tr>
+      <td>GO0003723_RNA_binding</td>
+    </tr>
+    <tr>
+      <td>GO0015630_microtubule_cytoskeleton</td>
+    </tr>
+    <tr>
+      <td>GO2000112_regulation_of_cellular_macromolecule_biosynthetic_process</td>
+    </tr>
+    <tr>
+      <td>GO0018130_heterocycle_biosynthetic_process</td>
+    </tr>
+    <tr>
+      <td>GO0007049_cell_cycle</td>
+    </tr>
+    <tr>
+      <td>GO0055074_calcium_ion_homeostasis</td>
+    </tr>
+    <tr>
+      <td>GO0045892_negative_regulation_of_transcription,_DNA_templated</td>
+    </tr>
+    <tr>
+      <td>GO0009891_positive_regulation_of_biosynthetic_process</td>
+    </tr>
+    <tr>
+      <td>GO0010468_regulation_of_gene_expression</td>
+    </tr>
+    <tr>
+      <td>GO0016070_RNA_metabolic_process</td>
+    </tr>
+    <tr>
+      <td>GO0090304_nucleic_acid_metabolic_process</td>
+    </tr>
+    <tr>
+      <td>GO0030659_cytoplasmic_vesicle_membrane</td>
+    </tr>
+    <tr>
+      <td>GO0010562_positive_regulation_of_phosphorus_metabolic_process</td>
+    </tr>
+    <tr>
+      <td>GO0007167_enzyme_linked_receptor_protein_signaling_pathway</td>
+    </tr>
+    <tr>
+      <td>GO1903508_positive_regulation_of_nucleic_acid_templated_transcription</td>
+    </tr>
+  </tbody>
+</table>
+        </body>
+    </html>

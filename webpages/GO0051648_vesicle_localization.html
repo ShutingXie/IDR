@@ -3,6 +3,25 @@
         <head>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
             <style>body{ margin:0 100; background:whitesmoke; }</style>
+            
+            <script> 
+                window.addEventListener('DOMContentLoaded', (event) => {
+                    // Get all the cells in the first column of the IDRs List table
+                    const cells = document.querySelectorAll('table.table-striped:nth-of-type(1) td:nth-child(1)');
+
+                    // Add a hyperlink to each cell
+                    cells.forEach((cell) => {
+                        const text = cell.innerText;
+                        console.log(text)
+                        const hyperlink = document.createElement('a');
+                        hyperlink.href = "https://www.uniprot.org/uniprotkb/" + text + "/entry" + text; //add URL
+                        hyperlink.textContent = text;
+                        cell.innerText = '';
+                        cell.appendChild(hyperlink);
+                    });    
+                });
+            </script>
+            
         </head>
         <body>
             <h1>Group/Function: GO0051648_vesicle_localization</h1>

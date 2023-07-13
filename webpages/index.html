@@ -14,7 +14,7 @@
             <table class="table table-striped">
                 <thead>
                     <tr style="text-align: right;">
-                    <th>GO Labels</th>
+                    <th>GO Label</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,33 +29,26 @@
                         // Generate the table rows dynamically
                         functionNames.forEach(function (name) {
 
+                            // Create a new row
+                            var row = document.createElement("tr");
 
-                        // Create a new row
-                        var row = document.createElement("tr");
+                            // Create a new cell
+                            var cell = document.createElement("td");
 
+                            // Create a new anchor element
+                            var link = document.createElement("a");
 
-                        // Create a new cell
-                        var cell = document.createElement("td");
+                            link.href = name + ".html";
+                            link.textContent = name;
 
+                            // Append the anchor element to the cell
+                            cell.appendChild(link);
 
-                        // Create a new anchor element
-                        var link = document.createElement("a");
+                            // Append the cell to the row
+                            row.appendChild(cell);
 
-
-                        link.href = name + ".html";
-                        link.textContent = name;
-
-
-                        // Append the anchor element to the cell
-                        cell.appendChild(link);
-
-
-                        // Append the cell to the row
-                        row.appendChild(cell);
-
-
-                        // Append the row to the table body
-                        tbody.appendChild(row);
+                            // Append the row to the table body
+                            tbody.appendChild(row);
 
                         });
 

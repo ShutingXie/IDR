@@ -4,7 +4,9 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
             <style>body{ margin:0 100; background:whitesmoke; }</style>
             
+            
             <script> 
+            // hyperlink the uniprot id to the uniprot static page for each protein
                 window.addEventListener('DOMContentLoaded', (event) => {
                     // Get all the cells in the first column of the IDRs List table
                     const cells = document.querySelectorAll('table.table-striped:nth-of-type(1) td:nth-child(1)');
@@ -21,6 +23,32 @@
                     });    
                 });
             </script>
+            
+            
+          <script>
+          // redirect to the "Evolutionary Signatures of Intrinsically Disordered Regions" website
+            window.addEventListener('DOMContentLoaded', (event) => {
+                // Get all the cells in the IDRs List table
+                const rows = document.querySelectorAll('table.table-striped:nth-of-type(1) tbody tr');
+
+                // Loop through each row
+                rows.forEach((row) => {
+                    const cells = row.querySelectorAll('td');
+                    if (cells.length >= 2) {
+                        const uniProtID = cells[0].innerText;
+                        const hyperlinkCell = cells[1];
+
+                        const hyperlink = document.createElement('a');
+                        hyperlink.href = "http://142.150.219.123:5000?dataset=Human_disopred3&uniprot_id=" + uniProtID; // Construct the URL with UniProt ID
+                        hyperlink.textContent = hyperlinkCell.innerText;
+
+                        hyperlinkCell.innerText = '';
+                        hyperlinkCell.appendChild(hyperlink);
+                    }
+                });
+            });
+        </script>
+        
             
         </head>
         <body>
